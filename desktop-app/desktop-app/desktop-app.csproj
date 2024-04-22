@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{353FB392-5C65-49D9-A4BC-BE7BAF8E3724}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>desktop_app</RootNamespace>
+    <AssemblyName>desktop-app</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controlador\Host.cs" />
+    <Compile Include="Modelo\HostMessage.cs" />
+    <Compile Include="Modelo\MyFile.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vista\Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\InterfaceSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\InterfaceSelection.Designer.cs">
+      <DependentUpon>InterfaceSelection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ReceivingProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ReceivingProcess.Designer.cs">
+      <DependentUpon>ReceivingProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SendingProcess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SendingProcess.Designer.cs">
+      <DependentUpon>SendingProcess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\ScannerHost.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\ScannerHost.Designer.cs">
+      <DependentUpon>ScannerHost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\SelectionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista\SelectionControl.Designer.cs">
+      <DependentUpon>SelectionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\WaitingAceppt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\WaitingAceppt.Designer.cs">
+      <DependentUpon>WaitingAceppt.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Vista\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\InterfaceSelection.resx">
+      <DependentUpon>InterfaceSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ReceivingProcess.resx">
+      <DependentUpon>ReceivingProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SendingProcess.resx">
+      <DependentUpon>SendingProcess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ScannerHost.resx">
+      <DependentUpon>ScannerHost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SelectionControl.resx">
+      <DependentUpon>SelectionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\WaitingAceppt.resx">
+      <DependentUpon>WaitingAceppt.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\adapter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\device.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
