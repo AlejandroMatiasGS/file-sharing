@@ -1,5 +1,5 @@
 ﻿namespace desktop_app.Vista {
-    partial class WaitingAceppt {
+    partial class WaitingAccept {
         /// <summary>
         /// Required designer variable.
         /// </summary>

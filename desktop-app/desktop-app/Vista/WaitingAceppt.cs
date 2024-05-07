@@ -12,16 +12,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace desktop_app.Vista {
-    public partial class WaitingAceppt : Form {
+    public partial class WaitingAccept : Form {
         private Host h;
         private Thread hiloAccept;
         private bool flagStop;
         private string folder;
         private string ip;
 
-        public WaitingAceppt(string ip, string folder) {
+        public WaitingAccept(string ip, string folder) {
             InitializeComponent();
-            this.h = new Host(ip, 7);
+            this.h = new Host(ip, 7777);
             flagStop = false;
             this.folder = folder;
             this.ip = ip;

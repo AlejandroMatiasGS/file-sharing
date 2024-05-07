@@ -24,6 +24,7 @@ namespace desktop_app.Vista {
         }
 
         private void btnEnviar_Click(object sender, EventArgs e) {
+            lstFiles.Clear();
             FileInfo fi;
             OpenFileDialog fileDialog = new OpenFileDialog();
             fileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile);
@@ -95,7 +96,7 @@ namespace desktop_app.Vista {
                                 sc.SetName(intf.Name);
                                 sc.SetImage(Resources.adapter);
                                 sc.ControlClick += delegate {
-                                    WaitingAceppt wa = new WaitingAceppt(ip.Address.ToString(), folder);
+                                    WaitingAccept wa = new WaitingAccept(ip.Address.ToString(), folder);
                                     wa.ShowDialog();
                                     interS.Close();
                                 };

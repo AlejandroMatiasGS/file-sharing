@@ -33,7 +33,7 @@ namespace desktop_app.Vista {
                 string ip = _ip[0] + "." + _ip[1] + "." + _ip[2] + "." + Convert.ToString(i);
 
                 Host h = new Host();
-                if (h.Conectar(ip, 7, 100)) {
+                if (h.Conectar(ip, 7777, 100)) {
                     h.Enviar(HostMessage.WAIT);
                     lstHosts.Add(h);
 
@@ -48,7 +48,7 @@ namespace desktop_app.Vista {
                         flagStop = true;
                         h.Cerrar();
                         h = new Host();
-                        if(h.Conectar(ip, 7, 500)) {
+                        if(h.Conectar(ip, 7777, 500)) {
                             h.Enviar(HostMessage.PROCEED);
                             SendingProcess sp = new SendingProcess(h, lstFiles);
                             sp.ShowDialog();

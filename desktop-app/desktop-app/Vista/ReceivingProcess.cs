@@ -1,4 +1,4 @@
-﻿using desktop_app.Controlador;
+using desktop_app.Controlador;
 using desktop_app.Modelo;
 using Newtonsoft.Json;
 using System;
@@ -67,7 +67,7 @@ namespace desktop_app.Vista {
                                         this.Invoke((Action)(() => {
                                             dr = MessageBox.Show("¿Desea sobreescribir el archivo " + f.Name + "?", "Pregunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                                         }));
-                                    } catch { }
+                                    } catch { }     
 
                                     if (dr == DialogResult.No) continue;
                                 }
@@ -122,6 +122,7 @@ namespace desktop_app.Vista {
                 this.Invoke(new Action(() => { this.Close(); }));
             } catch { }
         }
+        
         private void btnCancelar_Click(object sender, EventArgs e) {
             flagStop = true;
             this.h.CerrarServer();

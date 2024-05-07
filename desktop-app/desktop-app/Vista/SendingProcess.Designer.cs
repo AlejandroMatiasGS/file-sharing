@@ -65,6 +65,8 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pBar);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "SendingProcess";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoadProcess";
