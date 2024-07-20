@@ -31,6 +31,7 @@ public class Host {
     public boolean aceptar() {
         try {
             this.client = server.accept();
+            this.client.setSoTimeout(7000);
             return true;
         } catch (IOException e) {
             return false;

@@ -48,13 +48,11 @@ namespace desktop_app.Controlador {
 
         public bool Accept() {
             try {
-                if(this.server.Poll(0, SelectMode.SelectRead)) {
-                    this.client = this.server.Accept();
-                    this.client.ReceiveTimeout = 7000;
-                    this.client.SendTimeout = 7000;
-                    return true;
-                }else return false;
-            }catch {  return false; }
+                this.client = this.server.Accept();
+                this.client.ReceiveTimeout = 7000;
+                this.client.SendTimeout = 7000;
+                return true;
+            } catch {  return false; }
         }
 
         public bool Conectar(String ip, int port, int connectTimeout) {

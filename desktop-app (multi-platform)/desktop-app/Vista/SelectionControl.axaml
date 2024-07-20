@@ -1,0 +1,20 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="358" d:DesignHeight="108"
+             x:Class="desktop_app.Vista.SelectionControl"
+			 Width="358"
+			 Height="108"
+			 Background="LightGray">
+
+	<Button Width="358" Height="108">
+		<Panel Width="358" Height="108">
+			<Image  Name="lblImagen" Width="96" Height="96" Margin="7,7" HorizontalAlignment="Left" VerticalAlignment="Top"></Image>
+			<Label Background="LightGray" Width="243" Height="96" Margin="109, 7" HorizontalAlignment="Left" VerticalAlignment="Top">
+				<TextBlock Name="lblName" VerticalAlignment="Center" HorizontalAlignment="Center"> HOLLALAA</TextBlock>
+			</Label>
+		</Panel>
+	</Button>
+    
+</UserControl>
