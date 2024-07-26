@@ -1,6 +1,6 @@
 # file-sharing
 
-El proyecto consiste en una aplicación de escritorio y móvil (ANDROID) que permite transferir archivos entre ellas.
+El proyecto consiste en dos aplicaciones (escritorio y móvil (ANDROID)) que permite transferir archivos entre ellas.
 
 Plataformas: Windows y Android.
 Tecnologías: C# (.NET), Java (Android Studio).
