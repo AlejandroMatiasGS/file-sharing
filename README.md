@@ -1,2 +1,10 @@
 # file-sharing
-Proyecto personal de una app que permite intercambiar archivos por medio de la red
+
+El proyecto consiste en una aplicación de escritorio y móvil (ANDROID) que permite transferir archivos entre ellas.
+
+Plataformas: Windows y Android.
+Tecnologías: C# (.NET), Java (Android Studio).
+Características:
+* Interfaz de usuario intuitiva: Diseño y desarrollo de interfaces para ambas plataformas, asegurando una experiencia de usuario fluida.
+* Manejo de hilos (Threads): Implementación eficiente de la transferencia de archivos en segundo plano, evitando bloqueos en la interfaz de usuario.
+* Programación de sockets: Establecimiento de conexiones seguras y confiables para la transmisión de datos entre dispositivos.
