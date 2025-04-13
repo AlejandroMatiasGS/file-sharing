@@ -1,0 +1,32 @@
+# Flutter
+file_sharing_mobile/.dart_tool/
+file_sharing_mobile/.flutter-plugins
+file_sharing_mobile/.flutter-plugins-dependencies
+file_sharing_mobile/.packages
+file_sharing_mobile/build/
+file_sharing_mobile/ios/Flutter/.last_build_id
+file_sharing_mobile/ios/Pods/
+file_sharing_mobile/ios/.symlinks/
+file_sharing_mobile/pubspec.lock
+file_sharing_mobile/.idea/
+
+# Flutter/Dart related
+file_sharing_mobile/.vscode/
+
+# Java Gradle
+file_sharing_desktop/.gradle/
+file_sharing_desktop/build/
+file_sharing_desktop/out/
+file_sharing_desktop/.idea/
+file_sharing_desktop/.vscode/
+file_sharing_desktop/.classpath
+file_sharing_desktop/.project
+file_sharing_desktop/.settings/
+
+# Eclipse, IntelliJ, and other IDEs
+file_sharing_mobile/.idea/
+file_sharing_desktop/.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
